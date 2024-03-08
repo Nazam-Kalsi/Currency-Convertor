@@ -5,7 +5,10 @@ function useCurrencyInfo(c) {
   // let currency = {1:2};
   useEffect(() => {
     fetch(
-      `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${c}.json`
+      // `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${c}.json`
+      `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${c}.json`
+
+
       )
       .then((res) => res.json())
       .then((res) => setCurrency(res[c]))

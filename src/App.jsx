@@ -22,7 +22,10 @@ function App() {
     setConvertedAmount(amount * data[to]);
   }
   return (
-    <div className="w-full">
+    <div className="w-full flex items-center  flex-col gap-12 h-lvh bg-blue-400/50 p-12">
+      <div className="text-6xl font-bold text-white">
+        CURRENCY CONVERTOR 
+      </div>
       <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
         <form
           onSubmit={(e) => {
